@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Noticias</string>
+
+    <!--MAIN ACTIVITY-->
+    <string name="Btn_Login">Login</string>
+    <string name="Btn_Registro">Registro</string>
 </resources>

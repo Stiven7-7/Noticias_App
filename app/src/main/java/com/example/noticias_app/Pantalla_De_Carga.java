@@ -13,7 +13,7 @@ public class Pantalla_De_Carga extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_de_carga);
 
-        int tiempo = 3050;
+        int tiempo = 3000;
 
         new Handler().postDelayed(new Runnable() {
             @Override
