@@ -53,7 +53,7 @@ public class Registro extends AppCompatActivity {
             public void onClick(View v) {
                 //
                 startActivity(new Intent(Registro.this, Login.class));
-                finish();
+                //finish();
             }
         });
     }
@@ -76,7 +76,13 @@ public class Registro extends AppCompatActivity {
             Toast.makeText(this,"Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this,"Registro Exitoso", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(Registro.this, MenuPrincipal.class));
+
+            //Enviar valores a menu principal
+            Intent intent = new Intent(Registro.this, MenuPrincipal.class);
+            intent.putExtra("nombre", nombre);
+            intent.putExtra("correo", correo);
+            startActivity(intent);
+
             finish();
             //CrearCuenta();
         }

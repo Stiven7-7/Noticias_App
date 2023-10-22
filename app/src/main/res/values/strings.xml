@@ -14,5 +14,10 @@
     <string name="RegistrarUsuario">REGISTRAR</string>
     <string name="TengoUnaCuentaTXT">Tengo una cuenta</string>
 
+    <!--MENU PRINCIPAL-->
+    <string name="BienvenidoPrincipal">Bienvenid@</string>
+    <string name="NombrePrincipal"> -- </string>
+    <string name="CorreoPrincipal"> -- </string>
+
 
 </resources>

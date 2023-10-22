@@ -5,4 +5,5 @@
 
     <color name="colorPrimary">#1C3FEE</color>
     <color name="colorPrimaryDark">#0900BB</color>
+    <color name="colorBase">#9EA2F8</color>
 </resources>
