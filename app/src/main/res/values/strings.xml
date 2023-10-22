@@ -2,6 +2,17 @@
     <string name="app_name">Noticias</string>
 
     <!--MAIN ACTIVITY-->
-    <string name="Btn_Login">Login</string>
-    <string name="Btn_Registro">Registro</string>
+    <string name="Btn_Login">LOGIN</string>
+    <string name="Btn_Registro">REGISTRO</string>
+
+    <!--ACTIVIDAD REGISTRO-->
+    <string name="CrearCuentaTXT">Crear una cuenta</string>
+    <string name="NombreET">Nombres</string>
+    <string name="CorreoET">Correo electronico</string>
+    <string name="ContraseñaET">Contraseña</string>
+    <string name="ConfirmarContraseñaET">Confirmar contraseña</string>
+    <string name="RegistrarUsuario">REGISTRAR</string>
+    <string name="TengoUnaCuentaTXT">Tengo una cuenta</string>
+
+
 </resources>
