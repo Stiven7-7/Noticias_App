@@ -10,6 +10,8 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +19,11 @@ public class Registro extends AppCompatActivity {
 
     EditText NombreET, CorreoET, ContraseñaET, ConfirmarContraseñaET;
     Button RegistrarUsuario;
+    RadioGroup  GeneroRg;
     TextView TengoUnaCuentaTXT;
 
     String nombre = "", correo = "", password = "", confirmarPassword = "";
+    int generoSeleccionado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class Registro extends AppCompatActivity {
         ConfirmarContraseñaET = findViewById(R.id.ConfirmarContraseñaET);
         RegistrarUsuario = findViewById(R.id.RegistrarUsuario);
         TengoUnaCuentaTXT = findViewById(R.id.TengoUnaCuentaTXT);
+        GeneroRg = findViewById(R.id.GeneroRg);
 
         RegistrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,11 +68,14 @@ public class Registro extends AppCompatActivity {
         correo = CorreoET.getText().toString();
         password = ContraseñaET.getText().toString();
         confirmarPassword = ConfirmarContraseñaET.getText().toString();
+        generoSeleccionado = GeneroRg.getCheckedRadioButtonId();
 
         if(TextUtils.isEmpty(nombre)){
             Toast.makeText(this,"Ingrese nombre", Toast.LENGTH_SHORT).show();
         } else if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
             Toast.makeText(this,"Ingrese correo", Toast.LENGTH_SHORT).show();
+        } else if (generoSeleccionado == -1) {
+            Toast.makeText(this, "Seleccione su género", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(password)) {
             Toast.makeText(this,"Ingrese contraseña", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(confirmarPassword)) {

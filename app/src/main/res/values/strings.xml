@@ -13,8 +13,13 @@
     <string name="ConfirmarContraseñaET">Confirmar contraseña</string>
     <string name="RegistrarUsuario">REGISTRAR</string>
     <string name="TengoUnaCuentaTXT">Tengo una cuenta</string>
+    <string name="GeneroRg">Genero</string>
+    <string name="MasculinoRb">Masculino</string>
+    <string name="FemeninoRb">Femenino</string>
+
 
     <!--MENU PRINCIPAL-->
+    <string name="CerrarSesion">Salir</string>
     <string name="BienvenidoPrincipal">Bienvenid@</string>
     <string name="NombrePrincipal"> -- </string>
     <string name="CorreoPrincipal"> -- </string>
